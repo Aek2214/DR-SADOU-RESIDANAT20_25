@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résidanat Dr. Sadou Billel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Arrière-plan personnalisable full screen -->
+  <div id="background-container"></div>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Résidanat Dr. Sadou Billel</h1>
+    <p class="slogan">Préparez votre avenir médical</p>
+  </header>
+
+  <!-- Navigation par onglets -->
+  <nav>
+    <ul class="tabs">
+      <li data-tab="medical" class="active">Médicale</li>
+      <li data-tab="chirurgical">Chirurgicale</li>
+      <li data-tab="biologie">Biologie</li>
+    </ul>
+  </nav>
+
+  <!-- Zone principale du contenu -->
+  <main id="content">
+    <!-- Section Médicale -->
+    <section id="medical" class="tab-content active">
+      <h2>Section Médicale 🩺</h2>
+      <div class="content-block">
+        <h3>Cours</h3>
+        <button class="toggle-button" data-target="medical-courses-available">Afficher / Ajouter cours</button>
+        <div id="medical-courses-available" class="slide-list hidden">
+          <div id="medical-available-container"></div>
+          <input type="text" id="medical-new-course" placeholder="Ajouter un nouveau cours" />
+          <button class="add-btn" data-section="medical">Ajouter Nouveau</button>
+        </div>
+        <h4>Cours Révisés</h4>
+        <ul id="medical-revised-list" class="revised-list"></ul>
+      </div>
+      <div class="content-block">
+        <h3>QCM</h3>
+        <button class="toggle-button" data-target="medical-qcm-available">Afficher / Ajouter QCM</button>
+        <div id="medical-qcm-available" class="slide-list hidden">
+          <ul id="medical-qcm-list"></ul>
+          <textarea id="medical-new-qcm" placeholder="Coller votre QCM ici"></textarea>
+          <button class="add-qcm-btn" data-section="medical">Ajouter Nouveau QCM</button>
+        </div>
+        <h4>QCM Sélectionnés</h4>
+        <ul id="medical-selected-qcm" class="revised-list"></ul>
+      </div>
+    </section>
+
+    <!-- Section Chirurgicale -->
+    <section id="chirurgical" class="tab-content">
+      <h2>Section Chirurgicale 🔪</h2>
+      <div class="content-block">
+        <h3>Cours</h3>
+        <button class="toggle-button" data-target="chirurgical-courses-available">Afficher / Ajouter cours</button>
+        <div id="chirurgical-courses-available" class="slide-list hidden">
+          <ul id="chirurgical-available-list"></ul>
+          <input type="text" id="chirurgical-new-course" placeholder="Ajouter un nouveau cours" />
+          <button class="add-btn" data-section="chirurgical">Ajouter Nouveau</button>
+        </div>
+        <h4>Cours Révisés</h4>
+        <ul id="chirurgical-revised-list" class="revised-list"></ul>
+      </div>
+      <div class="content-block">
+        <h3>QCM</h3>
+        <button class="toggle-button" data-target="chirurgical-qcm-available">Afficher / Ajouter QCM</button>
+        <div id="chirurgical-qcm-available" class="slide-list hidden">
+          <ul id="chirurgical-qcm-list"></ul>
+          <textarea id="chirurgical-new-qcm" placeholder="Coller votre QCM ici"></textarea>
+          <button class="add-qcm-btn" data-section="chirurgical">Ajouter Nouveau QCM</button>
+        </div>
+        <h4>QCM Sélectionnés</h4>
+        <ul id="chirurgical-selected-qcm" class="revised-list"></ul>
+      </div>
+    </section>
+
+    <!-- Section Biologie -->
+    <section id="biologie" class="tab-content">
+      <h2>Section Biologie 🔬</h2>
+      <div class="content-block">
+        <h3>Cours</h3>
+        <button class="toggle-button" data-target="biologie-courses-available">
